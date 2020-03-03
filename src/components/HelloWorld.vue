@@ -1,31 +1,48 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
+    <div class="par">
+      <p>
+        Dus jij denkt na op een lokale ronde naar de tweede plek te rijden
+        <br>
+        hier om de knikkers mee te kunnen strijden?
+        <br>
+        Voor een beetje fatsoenlijk vertoon
+        <br>
+        Met je eten liefst geblend,
+        <br>
+        twee benen met voor de profs te weinig talent
+        <br>
+        en een enorm bord voor je kop
+        <br>
+        bereik je hier niet zomaar de top.
+      </p>
+    </div>
+    <h3>Regels</h3>
+    <div class="par">
+      <p>
+        Ganzenbord, je kent het wel;
+        <br>
+        van begin naar eind en snel
+        <br>
+        Kom je op een getal te staan,
+        <br>
+        klik het dan hieronder aan.
+      </p>
+    </div>
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+      <li @click="$emit('numberClick', 1)"><a>1</a></li>
+      <li @click="$emit('numberClick', 6)"><a>6</a></li>
+      <li @click="$emit('numberClick', 9)"><a>9</a></li>
+      <li @click="$emit('numberClick', 14)"><a>14</a></li>
+      <li @click="$emit('numberClick', 16)"><a>16</a></li>
+      <li @click="$emit('numberClick', 18)"><a>18</a></li>
+      <li @click="$emit('numberClick', 22)"><a>22</a></li>
+      <li @click="$emit('numberClick', 27)"><a>27</a></li>
+      <li @click="$emit('numberClick', 32)"><a>32</a></li>
+      <li @click="$emit('numberClick', 36)"><a>36</a></li>
+      <li @click="$emit('numberClick', 40)"><a>40</a></li>
+      <li @click="$emit('numberClick', 45)"><a>45</a></li>
+      <li @click="$emit('numberClick', 50)"><a>50</a></li>
     </ul>
   </div>
 </template>
@@ -35,14 +52,14 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
-  margin: 40px 0 0;
+  margin: 20px 0 0;
 }
 ul {
   list-style-type: none;
@@ -54,5 +71,14 @@ li {
 }
 a {
   color: #42b983;
+}
+
+p {
+  width: 600px;
+  text-align: center;
+}
+
+.par {
+  display: inline-block;
 }
 </style>

@@ -1,17 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/abr.jpg">
+    <HelloWorld msg="Welkom bij Marsmansenbord" @numberClick="numberClicked"/>
+    <modal v-if="this.isDisplayStartQuestion" @drink="closeStartQuestionDrink" @laf="closeStartQuestionLaffeBorrelaar">
+    </modal>
+    <numberModel v-if="this.isDisplayNumberModel" v-bind:clickedNumber="clickedNumber" v-bind:isDrinkGame="isDrinkGame"
+                 @close="isDisplayNumberModel = false">
+    </numberModel>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import modal from './components/Modal.vue'
+import numberModel from './components/NumberModal.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      isDrinkGame: false,
+      isDisplayStartQuestion: true,
+      isDisplayNumberModel: false,
+      clickedNumber: null
+    };
+  },
   components: {
-    HelloWorld
+    HelloWorld,
+    modal,
+    numberModel
+  },
+  methods: {
+    closeStartQuestionDrink(){
+      this.isDrinkGame = true;
+      this.isDisplayStartQuestion = false;
+    },
+    closeStartQuestionLaffeBorrelaar(){
+      this.isDrinkGame = false;
+      this.isDisplayStartQuestion = false;
+    },
+    numberClicked(number){
+      this.isDisplayNumberModel = true;
+      this.clickedNumber = number;
+    }
+  },
+  created: function() {
+    this.isDisplayStartQuestion = true;
   }
 }
 </script>
