@@ -57,7 +57,7 @@ export default {
       } else if (this.clickedNumber === 18){
         return "Zingend"
       } else if (this.clickedNumber === 22){
-        return "Po vallei"
+        return "Zeven sloten"
       } else if (this.clickedNumber === 27){
         return "Wildkamperen"
       } else if (this.clickedNumber === 32){
@@ -70,6 +70,14 @@ export default {
         return "Zonnesteek"
       } else if (this.clickedNumber === 50){
         return "Kiezels"
+      } else if (this.clickedNumber === 52){
+        return "Kink"
+      } else if (this.clickedNumber === 58){
+        return "Siesta"
+      } else if (this.clickedNumber === 59){
+        return "Spoorloos"
+      } else if (this.clickedNumber === 61){
+        return "Glas"
       } else {
         return "hoi"
       }
@@ -197,13 +205,53 @@ export default {
         }
       } else if (this.clickedNumber === 50){
         if (line_number === 1){
-          return "Strak langs de kust"
+          return "Strak langs de zee"
         } else if (line_number === 2) {
-          return "daar is niet tegenop te smeren,"
+          return "valt de afstand en hoogte mee,"
         } else if (line_number === 3) {
-          return "maar zonder bescherming van kleren"
+          return "maar het wegdek helaas tegen"
         } else if (line_number === 4) {
-          return "verbrand je sowieso je hele rug."
+          return "je rijd over grindpaden, geen wegen."
+        }
+      } else if (this.clickedNumber === 52){
+        if (line_number === 1){
+          return "Gezwind naar Perpignan."
+        } else if (line_number === 2) {
+          return "Over grind fietst nooit leuk"
+        } else if (line_number === 3) {
+          return "maar een kabelbreuk"
+        } else if (line_number === 4) {
+          return "maakt dat je helemaal moeilijk vooruit kan."
+        }
+      } else if (this.clickedNumber === 58){
+        if (line_number === 1){
+          return "In Perpignan aangekomen"
+        } else if (line_number === 2) {
+          return "zal de fietsenmaker gesloten blijken."
+        } else if (line_number === 3) {
+          return "Heet een paar uur lunchpauze genomen,"
+        } else if (line_number === 4) {
+          return "kan jij mooi even tour kijken."
+        }
+      } else if (this.clickedNumber === 59){
+        if (line_number === 1){
+          return "Je GPS-tracker valt uit,"
+        } else if (line_number === 2) {
+          return "dus online kom je niet meer vooruit."
+        } else if (line_number === 3) {
+          return "Dat heeft niet veel gevolgen,"
+        } else if (line_number === 4) {
+          return "maar is jammer voor hen die volgen."
+        }
+      } else if (this.clickedNumber === 61){
+        if (line_number === 1){
+          return "Je GPS-tracker valt uit,"
+        } else if (line_number === 2) {
+          return "Je laatste binnenbanden lek"
+        } else if (line_number === 3) {
+          return "en een scheur in je buitenband"
+        } else if (line_number === 4) {
+          return "zorgen dat je vlak voor Barcelona strand."
         }
       } else {
         return "hoi"
@@ -281,6 +329,30 @@ export default {
           return 'Vooral nu is hydrateren belangrijk. Leeg je bidon en ga twee stappen terug.'
         } else {
           return 'Ga twee stappen terug.'
+        }
+      } else if (this.clickedNumber === 50){
+        if (this.isDrinkGame){
+          return 'Neem een slok om spoeler over het grind te rijden en ga een stap terug.'
+        } else {
+          return 'Ga een stap terug.'
+        }
+      } else if (this.clickedNumber === 52){
+        if (this.isDrinkGame){
+          return 'Sla een beurt over en neem twee slokken.'
+        } else {
+          return 'Sla een beurt over.'
+        }
+      } else if (this.clickedNumber === 58){
+        if (this.isDrinkGame){
+          return 'Sla een beurt over en gebruik die tijd om je bidon te legen.'
+        } else {
+          return 'Sla een beurt over.'
+        }
+      } else if (this.clickedNumber === 59){
+        if (this.isDrinkGame){
+          return 'Ga een stao vooruit en neem vier slokken.'
+        } else {
+          return 'Ga een stao vooruit.'
         }
       } else {
         return "hoi"

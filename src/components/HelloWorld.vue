@@ -43,6 +43,10 @@
       <li @click="$emit('numberClick', 40)"><a>40</a></li>
       <li @click="$emit('numberClick', 45)"><a>45</a></li>
       <li @click="$emit('numberClick', 50)"><a>50</a></li>
+      <li @click="$emit('numberClick', 52)"><a>52</a></li>
+      <li @click="$emit('numberClick', 58)"><a>58</a></li>
+      <li @click="$emit('numberClick', 59)"><a>59</a></li>
+      <li @click="$emit('numberClick', 61)"><a>61</a></li>
     </ul>
   </div>
 </template>
