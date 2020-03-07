@@ -78,8 +78,10 @@ export default {
         return "Spoorloos"
       } else if (this.clickedNumber === 61){
         return "Glas"
+      } else if (this.clickedNumber === 62){
+        return "Score bord"
       } else {
-        return "hoi"
+        return "Dat is gek, hier hoor je niet te komen."
       }
     },
     getRhyme(line_number){
@@ -245,13 +247,23 @@ export default {
         }
       } else if (this.clickedNumber === 61){
         if (line_number === 1){
-          return "Je GPS-tracker valt uit,"
+          return "Geen kans meer op een mooie plek."
         } else if (line_number === 2) {
           return "Je laatste binnenbanden lek"
         } else if (line_number === 3) {
           return "en een scheur in je buitenband"
         } else if (line_number === 4) {
           return "zorgen dat je vlak voor Barcelona strand."
+        }
+      } else if (this.clickedNumber === 62){
+        if (line_number === 1){
+          return "Je nadert het eind op plek acht,"
+        } else if (line_number === 2) {
+          return "niet bepaald van voren,"
+        } else if (line_number === 3) {
+          return "niet bepaald onverwacht;"
+        } else if (line_number === 4) {
+          return "weer verloren."
         }
       } else {
         return "hoi"
@@ -354,8 +366,20 @@ export default {
         } else {
           return 'Ga een stao vooruit.'
         }
+      } else if (this.clickedNumber === 61){
+        if (this.isDrinkGame){
+          return 'Wacht tot een andere speler je inhaalt om je een bandje te geven. Drink iedere beurt een bidon leeg.'
+        } else {
+          return 'Wacht tot een andere speler je inhaalt om je een bandje te geven.'
+        }
+      } else if (this.clickedNumber === 62){
+        if (this.isDrinkGame){
+          return 'Drink je bidon leeg om de moed te vinden je ouders onder ogen te komen en doe twee stappen terug..'
+        } else {
+          return 'Doe twee stappen terug.'
+        }
       } else {
-        return "hoi"
+        return "Dit is niet waar je wilt zijn."
       }
     }
   }

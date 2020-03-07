@@ -47,6 +47,7 @@
       <li @click="$emit('numberClick', 58)"><a>58</a></li>
       <li @click="$emit('numberClick', 59)"><a>59</a></li>
       <li @click="$emit('numberClick', 61)"><a>61</a></li>
+      <li @click="$emit('numberClick', 62)"><a>62</a></li>
     </ul>
   </div>
 </template>
@@ -78,7 +79,7 @@ a {
 }
 
 p {
-  width: 600px;
+  width: 100%;
   text-align: center;
 }
 
