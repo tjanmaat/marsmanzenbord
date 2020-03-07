@@ -6,8 +6,6 @@
         <br>
         hier om de knikkers mee te kunnen strijden?
         <br>
-        Voor een beetje fatsoenlijk vertoon
-        <br>
         Met je eten liefst geblend,
         <br>
         twee benen met voor de profs te weinig talent

@@ -77,7 +77,7 @@ export default {
       } else if (this.clickedNumber === 59){
         return "Spoorloos"
       } else if (this.clickedNumber === 61){
-        return "Glas"
+        return "Splinter"
       } else if (this.clickedNumber === 62){
         return "Score bord"
       } else {
@@ -91,7 +91,7 @@ export default {
         } else if (line_number === 2) {
           return "dagen gepland en"
         } else if (line_number === 3) {
-          return "zelf goed warmgereden,"
+          return "zelfs goed warmgereden,"
         } else if (line_number === 4) {
           return "maar niet de juiste documenten."
         }
@@ -127,7 +127,7 @@ export default {
         }
       } else if (this.clickedNumber === 16){
         if (line_number === 1){
-          return "Tweede avond het is al laat."
+          return "Tweede avond, het is al laat."
         } else if (line_number === 2) {
           return "Helaas je waterzak niet goed gedicht."
         } else if (line_number === 3) {
@@ -149,7 +149,7 @@ export default {
         if (line_number === 1){
           return "Een hittegolf in europa."
         } else if (line_number === 2) {
-          return "Het kwik stijft tot 42 graden."
+          return "Het kwik stijgt tot 42 graden."
         } else if (line_number === 3) {
           return "Fietsen kan hierna,"
         } else if (line_number === 4) {
@@ -217,13 +217,13 @@ export default {
         }
       } else if (this.clickedNumber === 52){
         if (line_number === 1){
-          return "Gezwind naar Perpignan."
+          return "Onderweg naar Perpignan."
         } else if (line_number === 2) {
           return "Over grind fietst nooit leuk"
         } else if (line_number === 3) {
           return "maar een kabelbreuk"
         } else if (line_number === 4) {
-          return "maakt dat je helemaal moeilijk vooruit kan."
+          return "maakt dat je nauwelijks meer vooruit kan."
         }
       } else if (this.clickedNumber === 58){
         if (line_number === 1){
@@ -253,7 +253,7 @@ export default {
         } else if (line_number === 3) {
           return "en een scheur in je buitenband"
         } else if (line_number === 4) {
-          return "zorgen dat je vlak voor Barcelona strand."
+          return "zorgen dat je strand."
         }
       } else if (this.clickedNumber === 62){
         if (line_number === 1){
@@ -314,7 +314,7 @@ export default {
         }
       } else if (this.clickedNumber === 27){
         if (this.isDrinkGame){
-          return 'Vul je maag met je laatst water en ga een beurt slapen.'
+          return 'Vul je maag met je laatste water en ga een beurt slapen.'
         } else {
           return 'Ga een beurt slapen.'
         }
@@ -406,7 +406,7 @@ export default {
   }
 
   .modal-container {
-    width: 350px;
+    width: 80%;
     height: 180px;
     margin: 0 auto;
     padding: 20px 30px;
