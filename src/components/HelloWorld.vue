@@ -25,6 +25,10 @@
         Kom je op een getal te staan,
         <br>
         klik het dan hieronder aan.
+        <br>
+        Gooi met twee stenen, maar een om te beginnen.
+        <br>
+        Land precies op het eind om te winnen.
       </p>
     </div>
     <ul>

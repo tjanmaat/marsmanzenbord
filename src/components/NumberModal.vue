@@ -213,7 +213,7 @@ export default {
         } else if (line_number === 3) {
           return "maar het wegdek helaas tegen"
         } else if (line_number === 4) {
-          return "je rijd over grindpaden, geen wegen."
+          return "je rijdt over grindpaden, geen wegen."
         }
       } else if (this.clickedNumber === 52){
         if (line_number === 1){
@@ -290,15 +290,15 @@ export default {
         }
       } else if (this.clickedNumber === 14){
         if (this.isDrinkGame){
-          return 'Neem twee slokken, doe twee stappen vooruit en pak een beurt goede nachtrust.'
+          return 'Neem twee slokken, doe drie stappen vooruit en pak een beurt goede nachtrust.'
         } else {
-          return 'Doe twee stappen vooruit en pak een beurt goede nachtrust.'
+          return 'Doe drie stappen vooruit en pak een beurt goede nachtrust.'
         }
       } else if (this.clickedNumber === 16){
         if (this.isDrinkGame){
-          return 'Drink snel je bidon leeg voor er niets meer over is en ga twee stappen terug.'
+          return 'Drink snel je bidon leeg voor er niets meer over is en ga drie stappen terug.'
         } else {
-          return 'Ga twee stappen terug.'
+          return 'Ga drie stappen terug.'
         }
       } else if (this.clickedNumber === 18){
         if (this.isDrinkGame){
@@ -344,7 +344,7 @@ export default {
         }
       } else if (this.clickedNumber === 50){
         if (this.isDrinkGame){
-          return 'Neem een slok om spoeler over het grind te rijden en ga een stap terug.'
+          return 'Neem een slok om soepeler over het grind te rijden en ga een stap terug.'
         } else {
           return 'Ga een stap terug.'
         }
